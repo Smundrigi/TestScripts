@@ -140,7 +140,6 @@ public class Test_cos {
 		System.out.println("Returned Text --->" + result);
 		Assert.assertTrue(result.equals("0.5"));
 		driver.closeApp();
-
 	}
 
 }

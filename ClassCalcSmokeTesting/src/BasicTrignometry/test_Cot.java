@@ -30,10 +30,12 @@ public class test_Cot {
     Utilities ul = null;
 	public void settings() throws MalformedURLException
   	{
+		System.out.println("Setting method for Cot called");
 		 AppiumConfiguration serv = new AppiumConfiguration();
   		 driver = serv.settings();
   		 wait = new WebDriverWait(driver, 500);
 		 ul = new Utilities();
+		 System.out.println("Exited from Cot function");
   	}
     @Test (priority = 5)
     public void test_Cot_30() throws MalformedURLException

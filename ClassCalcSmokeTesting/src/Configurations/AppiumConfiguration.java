@@ -30,7 +30,7 @@ public class AppiumConfiguration
 		   public AndroidDriver<MobileElement> settings() throws MalformedURLException
 		   {
 			   System.out.println("Setting method is ccalled");
-			 //Set the Desired Capabilities
+			   //Set the Desired Capabilities
 			    if(count==0)			    	
 			    {
 			    	caps = new DesiredCapabilities();
@@ -46,7 +46,7 @@ public class AppiumConfiguration
 			    	caps.setCapability("noReset", "false");
 			    	caps.setCapability("unicodeKeyboard", true);
 			    	caps.setCapability("resetKeyboard", true);
-			    	driver = new AndroidDriver<MobileElement>(new URL("http://192.168.1.20:4723/wd/hub"), caps);	//home
+			    	driver = new AndroidDriver<MobileElement>(new URL("http://192.168.1.13:4723/wd/hub"), caps);	//home
 			    	//driver = new AndroidDriver<MobileElement>(new URL("http://10.30.60.54:4723/wd/hub"), caps);	 //GLibrary
 			    	//driver = new AndroidDriver<MobileElement>(new URL("http://10.1.15.212:4723/wd/hub"), caps);    //BPL
 			    	System.out.println("Appium Server Started");
